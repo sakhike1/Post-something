@@ -59,7 +59,7 @@ const createStore = () => {
       editPost(vuexContext, editedPost) {
         return this.$axios
           .$put(
-            "https://nuxtapp-89b14-default-rtdb.firebaseio.com/" +
+            "https://nuxtapp-89b14-default-rtdb.firebaseio.com/posts/" +
               editedPost.id +
               ".json?auth=" +
               vuexContext.state.token,

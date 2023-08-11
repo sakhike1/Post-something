@@ -88,12 +88,6 @@ export default {
       return this.$store.getters.loadedPosts;
     },
   },
-  props: {
-    post: {
-      type: Object,
-      required: false
-    }
-  },
 
 };
 
