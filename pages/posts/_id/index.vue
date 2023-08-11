@@ -1,6 +1,6 @@
 <template>
     <div class="single-post-page">
-        <section class="post">
+        <section class="post mt-6">
             <h1 class="post-title">{{ loadedPost.title }}</h1>
             <div class="post-details">
                 <div class="post-detail">Last updated on {{ loadedPost.updatedDate | date }}</div>
@@ -34,7 +34,8 @@ export default {
   
 <style scoped>
 .single-post-page {
-    padding: 30px;
+    padding: 70px;
+    height: 500px;
     text-align: center;
     box-sizing: border-box;
 }
@@ -55,13 +56,15 @@ export default {
 }
 
 .post-details {
-    padding: 10px;
+    padding: 20px;
     box-sizing: border-box;
     border-bottom: 3px solid #ccc;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+
 }
 
 @media (min-width: 768px) {

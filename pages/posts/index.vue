@@ -1,5 +1,8 @@
 <template>
     <div class="posts-page">
+        <div>
+
+        </div>
 
         <PostList :posts="loadedPosts" />
     </div>
@@ -9,7 +12,7 @@
 
 
 export default {
-    // middleware: 'log',
+    middleware: 'log',
     computed: {
         loadedPosts() {
             return this.$store.getters.loadedPosts
@@ -21,6 +24,7 @@ export default {
   
 <style scoped>
 .posts-page {
+    padding: 70px;
     display: flex;
     justify-content: center;
     align-items: center;

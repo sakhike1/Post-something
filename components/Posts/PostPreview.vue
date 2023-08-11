@@ -16,7 +16,6 @@
 
 <script>
 export default {
-    layout: 'footer',
 
     name: 'PostPreview',
     props: {

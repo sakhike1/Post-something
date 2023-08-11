@@ -1,4 +1,6 @@
-export default {
+const pkg = require('./package')
+
+module.exports = {
   mode: 'universal',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -16,6 +18,12 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel:'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans'}
     ]
+  },
+
+  loading: { color: '#fa923f', height: '4px', duration: 5000 },
+  loadingIndicator: {
+    name: 'circle',
+    color: '#fa923f'
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -51,7 +59,6 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
     baseURL: process.env.BASE_URL || 'https://nuxtapp-89b14-default-rtdb.firebaseio.com',
     credentials: false
   },

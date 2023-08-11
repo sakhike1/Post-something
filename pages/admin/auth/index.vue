@@ -1,18 +1,62 @@
 <template>
-  <div class="admin-auth-page">
-    <div class="auth-container">
-      <form @submit.prevent="onSubmit">
-        <AppControlInput type="email" v-model="email">E-Mail Address</AppControlInput>
-        <AppControlInput type="password" v-model="password">Password</AppControlInput>
-        <AppButton type="submit">{{ isLogin ? 'Login' : 'Sign Up' }}</AppButton>
-        <AppButton type="button" btn-style="inverted" style="margin-left: 10px" @click="isLogin = !isLogin">Switch to {{
-          isLogin ? 'Signup' : 'Login' }}</AppButton>
-      </form>
+  <section class="relative py-10 bg-gray-900 sm:py-16 lg:py-24">
+    <div class="absolute inset-0">
+      <img class="object-cover w-full h-full"
+        src="https://cdn.rareblocks.xyz/collection/celebration/images/signin/2/man-eating-noodles.jpg" alt="" />
     </div>
-  </div>
+    <div class="absolute inset-0 bg-gray-900/20"></div>
+
+    <div class="relative max-w-lg px-4 mx-auto sm:px-0">
+      <div class="overflow-hidden bg-gradient-to-r from-orange-400 to-rose-400 rounded-md shadow-md">
+        <div class="px-4 py-6 sm:px-8 sm:py-7">
+          <div class="text-center">
+            <h2 class="text-3xl font-bold text-gray-900">Welcome back</h2>
+
+          </div>
+
+          <form @submit.prevent="onSubmit">
+            <div class="space-y-5">
+              <div>
+
+                <div class="mt-2.5">
+                  <AppControlInput placeholder="type your email" type="email" v-model="email">E-Mail Address
+                  </AppControlInput>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex items-center justify-between">
+
+
+
+                </div>
+                <div class="mt-2.5">
+                  <AppControlInput class="border-rounded" placeholder="password" type="password" v-model="password">
+                    Password
+                  </AppControlInput>
+                </div>
+              </div>
+
+              <div>
+                <AppButton type="submit">{{ isLogin ? 'Login' : 'Sign Up' }}</AppButton>
+                <AppButton type="button" btn-style="inverted" style="margin-left: 10px" @click="isLogin = !isLogin">Switch
+                  to {{
+                    isLogin ? 'Signup' : 'Login' }}</AppButton>
+              </div>
+
+              <div>
+
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
+
 export default {
   name: "AdminAuthPage",
   layout: "admin",

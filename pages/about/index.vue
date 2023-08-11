@@ -8,7 +8,7 @@
                             is a blog for developers </h1>
 
                         <p class="mt-4  text-lg font-normal text-gray-400 sm:mt-8">Let us know which framework you are busy
-                            with and have you found interesting about the framework</p>
+                            with and what have you found interesting about the framework</p>
 
 
 

@@ -5,12 +5,14 @@
 
     <nuxt />
 
+    <AppFooter />
   </div>
 </template>
 
 <script>
 import TheHeader from '@/components/Navigation/TheHeader'
 import TheSidenav from '@/components/Navigation/TheSidenav'
+import AppFooter from '~/components/inc/AppFooter.vue'
 
 
 export default {
@@ -18,6 +20,7 @@ export default {
   components: {
     TheHeader,
     TheSidenav,
+    AppFooter
 
 
   },

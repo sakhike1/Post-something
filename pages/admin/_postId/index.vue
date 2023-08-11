@@ -1,5 +1,6 @@
 <template>
     <div class="admin-post-page">
+
         <section class="update-form">
             <AdminPostForm :post="loadedPost" @submit="onSubmitted" />
         </section>
@@ -14,6 +15,7 @@ export default {
     middleware: ['check-auth', 'auth'],
     components: {
         AdminPostForm
+
     },
     asyncData(context) {
         return context.app.$axios

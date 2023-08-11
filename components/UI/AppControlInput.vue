@@ -1,5 +1,5 @@
 <template>
-  <div class="input-control">
+  <div class="input-control" id="app">
     <label>
       <slot />
     </label>
@@ -21,7 +21,7 @@ export default {
       type: String,
       default: ''
     }
-  }
+  },
 }
 </script>
 
@@ -49,6 +49,11 @@ export default {
 .input-control textarea:focus {
   background-color: #eee;
   outline: none;
+}
+
+
+.pinkBG {
+  background-color: lightpink;
 }
 </style>
 

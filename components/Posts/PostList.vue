@@ -1,8 +1,8 @@
 <template>
-    <section class="post-list">
+    <section class="post-list" id="app">
 
-        <PostPreview v-for="post in posts" :key="post.id" :id="post.id" :is-admin="isAdmin" :thumbnail="post.thumbnail"
-            :title="post.title" :previewText="post.previewText" />
+        <PostPreview v-bind:class="vueClass" v-for="post in posts" :key="post.id" :id="post.id" :is-admin="isAdmin"
+            :thumbnail="post.thumbnail" :title="post.title" :previewText="post.previewText" />
 
     </section>
 </template>
@@ -26,6 +26,11 @@ export default {
         posts: {
             type: Array,
             required: true
+        }
+    },
+    data() {
+        return {
+            vueClass: "pinkBG"
         }
     }
 }
