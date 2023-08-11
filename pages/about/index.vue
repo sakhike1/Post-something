@@ -7,8 +7,8 @@
                         <h1 class="text-4xl font-normal text-white sm:text-5xl lg:text-6xl xl:text-7xl">Post something
                             is a blog for developers </h1>
 
-                        <p class="mt-4  text-lg font-normal text-gray-400 sm:mt-8">let us know which framework you are busy
-                            with and what have you found intresting about that framework</p>
+                        <p class="mt-4  text-lg font-normal text-gray-400 sm:mt-8">Let us know which framework you are busy
+                            with and have you found interesting about the framework</p>
 
 
 
