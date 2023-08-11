@@ -1,45 +1,71 @@
 <template>
   <div class="home-page">
     <section class="intro">
-      <section class="py-12 bg-black sm:pb-16 lg:pb-20 xl:pb-24">
-        <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-          <div class="relative">
-            <div class="lg:w-2/3">
-              <p class="text-sm font-normal tracking-widest text-gray-300 uppercase">
-                A Hub for Designers, Developers & Marketers
-              </p>
-              <h1 class="mt-6 text-4xl font-normal text-white sm:mt-10 sm:text-5xl lg:text-6xl xl:text-8xl">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-500">Post your
-                </span>
-                work
-              </h1>
-              <p class="max-w-lg mt-2 text-sm font-normal text-gray-400 sm:mt-8">
-                You can post anything to inspire other developers who want to be
-                developers click the button below to start posting
-              </p>
-              <div class="relative inline-flex items-center justify-center mt-8 sm:mt-12 group">
-                <div
-                  class="absolute transition-all duration-200 rounded-full -inset-px bg-gradient-to-r from-cyan-500 to-purple-500 group-hover:shadow-lg group-hover:shadow-cyan-500/50">
+      <div class="bg-black">
+        <header class="">
+          <div class="px-4 mx-auto sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 lg:h-20">
+
+
+              <button type="button"
+                class="inline-flex p-1 text-black transition-all duration-200 border border-black lg:hidden focus:bg-gray-100 hover:bg-gray-100">
+                <!-- Menu open: "hidden", Menu closed: "block" -->
+                <svg class="block w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+
+                <!-- Menu open: "block", Menu closed: "hidden" -->
+                <svg class="hidden w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+
+
+            </div>
+          </div>
+        </header>
+
+        <section class="py-10 sm:py-16 lg:py-24">
+          <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
+              <div>
+                <h1 class="text-4xl font-bold text-white sm:text-6xl lg:text-7xl">
+                  Post something to share your view on emerging
+                  <div class="relative inline-flex">
+                    <span class="absolute inset-x-0 bottom-0 border-b-[30px] border-[#4ADE80]"></span>
+                    <h1 class="relative text-4xl font-bold text-black sm:text-6xl lg:text-7xl">frameworks.</h1>
+                  </div>
+                </h1>
+
+                <p class="mt-8 text-xs text-white ">Post something is a blog that helps developers learn from
+                  other developers </p>
+
+                <div class="mt-10 sm:flex sm:items-center sm:space-x-8">
+                  <button @click="$router.push('/admin')"
+                    class="relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group">
+                    <span
+                      class="absolute w-0 h-0 transition-all duration-500 ease-out bg-green-500 rounded-full group-hover:w-56 group-hover:h-56"></span>
+                    <span
+                      class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
+                    <span class="relative">Signup to post </span>
+                  </button>
+
+
                 </div>
-                <button @click="$router.push('/admin')"
-                  class="relative inline-flex items-center justify-center px-8 py-3 text-base font-normal text-white bg-black border border-transparent rounded-full"
-                  role="button">
-                  Signup to post your work
-                </button>
               </div>
 
               <div>
-                <div class="inline-flex items-center pt-6 mt-8 border-t border-gray-800 sm:pt-10 sm:mt-14"></div>
+                <img class="w-full" id="floating"
+                  src="https://landingfoliocom.imgix.net/store/collection/dusk/images/hero/1/3d-illustration.png"
+                  alt="" />
               </div>
             </div>
-
-            <div class="mt-8 md:absolute md:mt-0 md:top-32 lg:top-0 md:right-0">
-              <img id="floating" class="w-full pr-20 max-w-xs mx-auto lg:max-w-lg xl:max-w-xl"
-                src="https://landingfoliocom.imgix.net/store/collection/dusk/images/hero/1/3d-illustration.png" alt="" />
-            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
+
     </section>
 
     <textcontent />
