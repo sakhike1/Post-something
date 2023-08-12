@@ -31,7 +31,7 @@
           <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div class="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
               <div>
-                <h1 class="text-4xl font-bold text-white sm:text-6xl lg:text-7xl">
+                <h1 id="box" class="text-4xl font-bold text-white sm:text-6xl lg:text-7xl">
                   Post something to share your view on emerging
                   <div class="relative inline-flex">
                     <span class="absolute inset-x-0 bottom-0 border-b-[30px] border-[#4ADE80]"></span>
@@ -81,13 +81,16 @@ import textcontent from "@/components/Posts/textcontent.vue";
 export default {
   components: {
     textcontent,
+
   },
+
 
   computed: {
     loadedPosts() {
       return this.$store.getters.loadedPosts;
     },
   },
+
 
 };
 
