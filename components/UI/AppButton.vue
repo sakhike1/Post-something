@@ -1,5 +1,8 @@
 <template>
-  <button class="button" :class="btnStyle" v-bind="$attrs" v-on="$listeners">
+  <button :class="btnStyle" v-bind="$attrs" v-on="$listeners"
+    class="inline-flex items-center px-6 py-3 text-gray-50 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-full hover:bg-gray-200 hover:text-gray-200">
+
+
     <slot />
   </button>
 </template>
@@ -19,45 +22,5 @@ export default {
 </script>
 
 
-<style scoped>
-.button {
-  font: inherit;
-  background-color: black;
-  color: white;
-  padding: 5px;
-  cursor: pointer;
-  border: 1px solid black;
-}
 
-.button:hover,
-.button:active {
-  background-color: rgb(51, 51, 51);
-  border: 1px solid black;
-}
 
-.inverted {
-  background-color: white;
-  color: black;
-  border: 1px solid transparent;
-}
-
-.inverted:hover,
-.inverted:active {
-  color: #ccc;
-  background-color: white;
-  border: 1px solid transparent;
-}
-
-.cancel {
-  background-color: red;
-  color: white;
-  border: 1px solid transparent;
-}
-
-.cancel:hover,
-.cancel:active {
-  background-color: salmon;
-  border: 1px solid transparent;
-  color: white;
-}
-</style>
