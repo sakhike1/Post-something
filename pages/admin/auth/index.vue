@@ -7,7 +7,7 @@
     <div class="absolute inset-0 bg-gray-900/20"></div>
 
     <div class="relative max-w-lg px-4 mx-auto sm:px-0">
-      <div class="overflow-hidden bg-gradient-to-r from-orange-400 to-rose-400 rounded-md shadow-md">
+      <div class="overflow-hidden bg-gray-50 rounded-md shadow-md">
         <div class="px-4 py-6 sm:px-8 sm:py-7">
           <div class="text-center">
             <h2 class="text-3xl font-bold text-gray-900">Welcome back</h2>
