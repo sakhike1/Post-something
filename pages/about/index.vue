@@ -4,13 +4,13 @@
             <div class="px-4 gap-4 mx-auto relative sm:px-6 lg:px-8 max-w-7xl">
                 <div class="grid items-center grid grid-flow-col justify-stretch lg:grid-cols-2 gap-x-16">
                     <div>
-                        <h1 id="box" class="text-4xl font-normal text-white sm:text-5xl lg:text-6xl xl:text-7xl">Post
+                        <h1 id="box" class="text-2xl font-normal text-white sm:text-5xl lg:text-6xl xl:text-6xl">Post
                             something
                             is a blog for developers </h1>
 
-                        <p id="box" class="mt-4  text-lg font-normal text-gray-400 sm:mt-8">Let us know which framework you
+                        <p id="box" class="mt-4  text-m font-normal text-red-200 sm:mt-8">Let us know which framework you
                             are busy
-                            with and what have you found interesting about the framework</p>
+                            with and what have you found interesting about that framework</p>
 
 
 
@@ -52,7 +52,7 @@
 export default {
     mounted() {
 
-        let box2 = ["Our work is carried out by passionate  developers who have experience", "We take into consideration every need that you have in order for us to deliver", "Our work does the talk we always go above and beyond expectations"]
+        let box2 = ["Our aim is to  add value to young developers ", "We share  anything that can help the next person", "Post something and  share your views on things"]
         let box = document.getElementById("box");
 
 
