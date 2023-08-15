@@ -1,8 +1,6 @@
 <template>
     <div class="posts-page">
-        <div>
-
-        </div>
+        <textcontent />
 
         <PostList :posts="loadedPosts" />
     </div>
@@ -10,8 +8,12 @@
   
 <script>
 
-
+import textcontent from "@/components/Posts/textcontent.vue";
 export default {
+    components: {
+        textcontent,
+
+    },
     middleware: 'log',
     computed: {
         loadedPosts() {
@@ -24,10 +26,13 @@ export default {
   
 <style scoped>
 .posts-page {
-    padding: 70px;
+
     display: flex;
-    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 }
 </style>
   
