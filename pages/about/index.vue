@@ -52,7 +52,7 @@
 export default {
     mounted() {
 
-        let box2 = ["Our aim is to  add value to young developers ", "We share  anything that can help the next person", "Post something and  share your views on things"]
+        let box2 = ["Our aim is to  add value to young developers ", "We share tools to help young developers ", "Post something and  share your views on things that matter to young developers"]
         let box = document.getElementById("box");
 
 

@@ -52,20 +52,21 @@ export default {
 <style scoped>
 .post-preview {
     border: 1px solid #ccc;
-    box-shadow: 0 2px 2px #ccc;
-    background-color: white;
+
+    background-image: linear-gradient(to right, rgb(134, 239, 172), rgb(192, 132, 252));
     width: 90%;
+    border-radius: 25px;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: rgb(247, 242, 242);
 }
 
 @media (min-width: 850px) {
     .post-preview {
         width: 400px;
-        margin: 10px;
+        margin: 20px;
     }
 }
 
@@ -74,15 +75,16 @@ a {
     height: 200px;
     background-position: center;
     background-size: cover;
+    border-radius: 25px;
+    transition: all .2s ease-in-out;
+}
+
+.post-thumbnail:hover {
+    transform: scale(1.1);
 }
 
 .post-content {
     padding: 10px;
     text-align: center;
-}
-
-a:hover .post-content,
-a:active .post-content {
-    background-color: #ccc;
 }
 </style>
