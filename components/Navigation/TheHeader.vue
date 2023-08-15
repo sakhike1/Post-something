@@ -91,6 +91,7 @@ export default {
 .nav-item a {
   text-decoration: none;
   color: white;
+  font-size: 13px;
 }
 
 .nav-item a:hover,
