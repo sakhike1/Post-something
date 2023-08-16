@@ -1,12 +1,12 @@
 <template>
-  <section class="relative py-10 bg-gray-900 sm:py-16 lg:py-24">
-    <div class="absolute inset-0">
+  <section class="relative h-[700px] py-20 bg-gray-900 sm:py-16 lg:py-24">
+    <div class="absolute  inset-0 ">
       <img class="object-cover w-full h-full"
         src="https://cdn.rareblocks.xyz/collection/celebration/images/signin/2/man-eating-noodles.jpg" alt="" />
     </div>
-    <div class="absolute inset-0 bg-gray-900/20"></div>
+    <div class="absolute inset-0 py-20 bg-gray-900/20"></div>
 
-    <div class="relative max-w-lg px-4 mx-auto sm:px-0">
+    <div class="relative py-8 max-w-lg px-4 mx-auto sm:px-0">
       <div class="overflow-hidden bg-gray-50 rounded-md shadow-md">
         <div class="px-4 py-6 sm:px-8 sm:py-7">
           <div class="text-center">
@@ -93,7 +93,7 @@ export default {
   box-shadow: 0 2px 2px #ccc;
   width: 300px;
   margin: auto;
-  padding: 10px;
+  padding: 20px;
   box-sizing: border-box;
 }
 </style>
