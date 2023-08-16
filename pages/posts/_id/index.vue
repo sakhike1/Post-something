@@ -37,8 +37,8 @@ export default {
   
 <style scoped>
 .single-post-page {
-    padding: 70px;
-    height: 500px;
+    padding: 90px;
+    height: 650px;
     text-align: center;
     box-sizing: border-box;
 }
