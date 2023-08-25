@@ -44,8 +44,8 @@
                     isLogin ? 'Signup' : 'Login' }}</AppButton>
               </div>
 
-              <div>
-
+              <div class="message" v-if="submitted">
+                Thank you for your submission, {{ username }}.
               </div>
             </div>
           </form>

@@ -1,6 +1,8 @@
 import Vuex from "vuex";
 import Cookie from "js-cookie";
 
+export const key = Symbol()
+
 const createStore = () => {
   return new Vuex.Store({
     state: {
