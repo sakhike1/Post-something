@@ -78,7 +78,7 @@ export default {
 
 .post-detail {
     color: rgb(88, 88, 88);
-    margin: 0 10px;
+    margin: 1 10px;
 }
 
 .post-feedback a {
@@ -88,7 +88,7 @@ export default {
 
 .post-feedback a:hover,
 .post-feedback a:active {
-    color: salmon;
+    color: rgb(246, 138, 126);
 }
 </style>
   
