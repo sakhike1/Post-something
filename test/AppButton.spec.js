@@ -6,7 +6,7 @@ test('AppButton renders correctly', () => {
     // Arrange
     const wrapper = mount(AppButton);
   
-    // Act
+    
   
     // Assert
     expect(wrapper.exists()).toBe(true);
@@ -16,7 +16,7 @@ test('AppButton renders correctly', () => {
     // Arrange
     const wrapper = mount(AppButton);
   
-    // Act
+  
   
     // Assert
     expect(wrapper.props().btnStyle).toBe('');
@@ -29,8 +29,7 @@ test('AppButton renders correctly', () => {
         default: 'Button Text'
       }
     });
-  
-    // Act
+ 
   
     // Assert
     expect(wrapper.text()).toBe('Button Text');
@@ -45,10 +44,11 @@ test('AppButton renders correctly', () => {
       }
     });
   
-    // Act
+    
   
     // Assert
     expect(wrapper.classes()).toContain(btnStyle);
+    expect().toMatchSnapshot();
   });
    
   

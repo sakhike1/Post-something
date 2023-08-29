@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import AdminPostForm from '@/components/Admin/AdminPostForm.vue'; // Adjust the path
+import AdminPostForm from '@/components/Admin/AdminPostForm.vue'; 
 
 describe('AdminPostForm', () => {
     it('emits submit event with edited post data', async () => {

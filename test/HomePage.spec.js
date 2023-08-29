@@ -1,6 +1,6 @@
 import { mount, createLocalVue } from '@vue/test-utils';
 import Vuex from 'vuex';
-import HomePage from '@/pages/index.vue'; // Adjust the path accordingly
+import HomePage from '@/pages/index.vue'; 
 
 const localVue = createLocalVue();
 localVue.use(Vuex);
@@ -27,5 +27,5 @@ describe('HomePage', () => {
     expect().toMatchSnapshot();
   });
 
-  // ... Add more tests as needed
+  
 });
