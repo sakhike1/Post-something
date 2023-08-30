@@ -1,18 +1,17 @@
 <template>
-    <div>
-    </div>
+  <div></div>
 </template>
-  
+
 <script>
 export default {
-    name: "Emitter",
+  name: "Emitter",
 
-    methods: {
-        emitEvent() {
-            this.$emit("myEvent", "name", "password")
-        }
-    }
-}
+  methods: {
+    emitEvent() {
+      this.$emit("myEvent", "name", "password");
+    },
+  },
+};
 </script>
-  
+
 <style scoped></style>

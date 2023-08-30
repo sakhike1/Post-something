@@ -10,32 +10,36 @@
 </template>
 
 <script>
-import TheHeader from '@/components/Navigation/TheHeader'
-import TheSidenav from '@/components/Navigation/TheSidenav'
-import AppFooter from '~/components/inc/AppFooter.vue'
-
+import TheHeader from "@/components/Navigation/TheHeader";
+import TheSidenav from "@/components/Navigation/TheSidenav";
+import AppFooter from "~/components/inc/AppFooter.vue";
 
 export default {
   // middleware: 'log',
   components: {
     TheHeader,
     TheSidenav,
-    AppFooter
-
-
+    AppFooter,
   },
   data() {
     return {
-      displaySidenav: false
-    }
-  }
-}
+      displaySidenav: false,
+    };
+  },
+};
 </script>
 
-  
 <style>
 html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family:
+    "Source Sans Pro",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -81,4 +85,3 @@ html {
   background-color: #35495e;
 }
 </style>
-  
